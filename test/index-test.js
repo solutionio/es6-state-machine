@@ -1,7 +1,7 @@
 import assert from 'assert';
-import { Module } from '../index';
-describe('Not!', () => {
-  it('gets not', function() {
-    assert.equal(typeof Module, 'function');
+import { Stateful } from '../index';
+describe('Stateful', () => {
+  it('Is a function', function() {
+    assert.equal(typeof Stateful, 'function');
   });
 });
