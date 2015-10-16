@@ -9,3 +9,12 @@ Goal
 * No worries about transpiling if possible
 
 Just fork, rename, update package.json and start.
+
+# Commands
+
+* test - mocha
+* test:watch - watches for changes / dev mode
+* docs - generates api.md
+* changelog - appends changes to the changelog
+* jscs - checks style
+* docs: site docs into ./out
