@@ -11,7 +11,7 @@
     "test:watch": "./node_modules/mocha/bin/mocha --compilers js:mocha-traceur -w",
     "jscs": "./node_modules/jscs/bin/jscs --esnext index.js test/*.js",
     "docs": "./node_modules/documentation/bin/documentation.js index.js -f html -o out",
-    "docs:site": "./node_modules/documentation/bin/documentation.js lib/* -f md -o api.md"
+    "docs:site": "./node_modules/documentation/bin/documentation.js index.js -f md -o api.md"
   },
   "devDependencies": {
     "browserify": "^11.2.0",
