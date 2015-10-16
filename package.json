@@ -1,0 +1,29 @@
+{
+  "name": "es6-template",
+  "version": "1.0.0",
+  "description": "es6 development standards",
+  "main": "index.js",
+  "repository": "git@github.com:sebs/es6-template.git",
+  "scripts": {
+    "env": "env",
+    "changelog": "git log `git describe --tags --abbrev=0`..HEAD >> changelog.md",
+    "test": "./node_modules/mocha/bin/mocha --compilers js:mocha-traceur",
+    "test:watch": "./node_modules/mocha/bin/mocha --compilers js:mocha-traceur -w",
+    "jscs": "./node_modules/jscs/bin/jscs --esnext index.js test/*.js",
+    "docs": "./node_modules/documentation/bin/documentation.js index.js -f html -o out",
+    "docs:site": "./node_modules/documentation/bin/documentation.js lib/* -f md -o api.md"
+  },
+  "devDependencies": {
+    "browserify": "^11.2.0",
+    "documentation": "^2.1.0-alpha2",
+    "es6ify": "^1.6.0",
+    "eslint": "^1.6.0",
+    "jscs": "^2.3.0",
+    "jsdoc": "^3.3.3",
+    "mocha": "^2.3.3",
+    "mocha-traceur": "^2.1.0",
+    "traceur": "0.0.92"
+  },
+  "author": "Sebastian Schürmann",
+  "license": "MIT"
+}
