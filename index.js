@@ -1,7 +1,12 @@
 
 // from https://gist.github.com/foca/3462441
 
-//* @class */
+/**
+* @param object
+* @param initialState
+* @param interfaces
+* @param onInitialize
+*/
 export function Stateful(object, initialState, interfaces, onInitialize) {
   let currentState;
   this.interfaces = interfaces = interfaces || object.constructor.States;
